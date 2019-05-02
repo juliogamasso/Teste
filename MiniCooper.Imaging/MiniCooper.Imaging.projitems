@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>751e4d4b-0d99-410e-b738-2f195ecee696</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>MiniCooper.Imaging</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)AlgorithmsEnum.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Constants.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Dither.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)DitherFactory.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Extensions.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ImageExt.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ImagingException.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)IPrintLogo.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Pixel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)PrinterImage.cs" />
+  </ItemGroup>
+</Project>

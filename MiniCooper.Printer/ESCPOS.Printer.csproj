@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A4DAB9A3-9B63-4BF5-9C19-4881EF7AA776}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MiniCooper.Printer</RootNamespace>
+    <AssemblyName>MiniCooper.Printer</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.12.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Barcodes\Enums\BarcodeTypes.cs" />
+    <Compile Include="Barcodes\BaseBarcode.cs" />
+    <Compile Include="Barcodes\Code128.cs" />
+    <Compile Include="Barcodes\Code39.cs" />
+    <Compile Include="Barcodes\Enums\HRIPositions.cs" />
+    <Compile Include="Barcodes\Enums\IBarcode.cs" />
+    <Compile Include="Barcodes\ITF.cs" />
+    <Compile Include="Barcodes\QrCode.cs" />
+    <Compile Include="Common\BasePrinter.cs" />
+    <Compile Include="Common\BaseSerialPort.cs" />
+    <Compile Include="Common\Enums\CodePagesEnum.cs" />
+    <Compile Include="Common\Enums\CutModeEnum.cs" />
+    <Compile Include="Common\Enums\FontEffectsEnum.cs" />
+    <Compile Include="Common\Enums\FontHeighScalarEnum.cs" />
+    <Compile Include="Common\Enums\FontAlignment.cs" />
+    <Compile Include="Common\Enums\FontWidthScalarEnum.cs" />
+    <Compile Include="Common\Enums\ReturnCodeEnum.cs" />
+    <Compile Include="Common\Enums\StatusTypesEnum.cs" />
+    <Compile Include="Common\Enums\ThermalFontsEnum.cs" />
+    <Compile Include="Common\RealTimeStatus.cs" />
+    <Compile Include="Common\StatusReport.cs" />
+    <Compile Include="Interfaces\IDocument.cs" />
+    <Compile Include="Interfaces\IPrinter.cs" />
+    <Compile Include="Interfaces\ISection.cs" />
+    <Compile Include="Interfaces\ISerialConnection.cs" />
+    <Compile Include="Helpers\Extensions.cs" />
+    <Compile Include="Helpers\Json.cs" />
+    <Compile Include="Helpers\NativeMethods.cs" />
+    <Compile Include="Helpers\RawPrinterHelper.cs" />
+    <Compile Include="Helpers\SerialPortUtils.cs" />
+    <Compile Include="Printers\GenericPrinter\GenericImageSection.cs" />
+    <Compile Include="Printers\GenericPrinter\GenericPrinter.cs" />
+    <Compile Include="Printers\GenericPrinter\GenericSerialPort.cs" />
+    <Compile Include="Printers\GenericPrinter\GenericStatusResquestEnum.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Templates\ImageSection.cs" />
+    <Compile Include="Templates\Placeholder.cs" />
+    <Compile Include="Templates\StandardDocument.cs" />
+    <Compile Include="Templates\StandardSection.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="..\MiniCooper.Imaging\MiniCooper.Imaging.projitems" Label="Shared" />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

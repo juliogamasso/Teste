@@ -5,7 +5,7 @@ using System.Drawing.Imaging;
 using System.IO;
 using System.Windows.Media.Imaging;
 
-namespace ESCPOS.PrinterC
+namespace ESCPOS.Imaging
 {
     public class PrinterImage : IPrintLogo
     {

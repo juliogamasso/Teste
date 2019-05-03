@@ -1,6 +1,5 @@
 ﻿using ESCPOS.Printer.Common;
 using ESCPOS.Printer.Common.Enums;
-using ESCPOS.PrinterC;
 
 namespace ESCPOS.Printer.Interfaces
 {
@@ -112,7 +111,7 @@ namespace ESCPOS.Printer.Interfaces
         /// var someImage = Webcam.GrabPicture()
         /// myPrinter.SetImage(someImage, document, 1);
         /// </example>
-        void SetImage(PrinterImage image, IDocument doc, int index);
+        void SetImage(Imaging.PrinterImage image, IDocument doc, int index);
 
         /// <summary>
         /// Emitir um caractere de nova linha e retornar a impressão

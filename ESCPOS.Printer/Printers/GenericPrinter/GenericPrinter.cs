@@ -3,7 +3,6 @@ using ESCPOS.Printer.Common;
 using ESCPOS.Printer.Common.Enums;
 using ESCPOS.Printer.Interfaces;
 using ESCPOS.Printer.Templates;
-using ESCPOS.PrinterC;
 using System.Collections.Generic;
 using System.Text;
 
@@ -165,7 +164,7 @@ namespace ESCPOS.Printer.Printers.GenericPrinter
             }
         }
 
-        public override void SetImage(PrinterImage image, IDocument doc, int index)
+        public override void SetImage(Imaging.PrinterImage image, IDocument doc, int index)
         {
             while (index > doc.Sections.Count)
             {
@@ -178,7 +177,7 @@ namespace ESCPOS.Printer.Printers.GenericPrinter
             };
         }
 
-        public override void SetImage(PrinterImage image, IDocument doc, int index, FontAlignment justification)
+        public override void SetImage(Imaging.PrinterImage image, IDocument doc, int index, FontAlignment justification)
         {
             while (index > doc.Sections.Count)
             {

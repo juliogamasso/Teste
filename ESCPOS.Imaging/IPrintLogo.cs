@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Windows.Media.Imaging;
 
-namespace ESCPOS.PrinterC
+namespace ESCPOS.Imaging
 {
     interface IPrintLogo : IDisposable
     {

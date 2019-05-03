@@ -1,4 +1,4 @@
-﻿namespace ESCPOS.PrinterC
+﻿namespace ESCPOS.Imaging
 {
     /// <summary>
     /// Lista de algoritmos de pontilhamento disponíveis

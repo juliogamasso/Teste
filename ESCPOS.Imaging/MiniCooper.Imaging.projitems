@@ -6,7 +6,7 @@
     <SharedGUID>751e4d4b-0d99-410e-b738-2f195ecee696</SharedGUID>
   </PropertyGroup>
   <PropertyGroup Label="Configuration">
-    <Import_RootNamespace>MiniCooper.Imaging</Import_RootNamespace>
+    <Import_RootNamespace>ESCPOS.Imaging</Import_RootNamespace>
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="$(MSBuildThisFileDirectory)AlgorithmsEnum.cs" />

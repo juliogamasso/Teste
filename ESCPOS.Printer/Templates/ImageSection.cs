@@ -1,5 +1,4 @@
 ﻿using ESCPOS.Printer.Common.Enums;
-using ESCPOS.PrinterC;
 
 namespace ESCPOS.Printer.Templates
 {
@@ -28,7 +27,7 @@ namespace ESCPOS.Printer.Templates
         /// <summary>
         /// Imagem para colocar dentro do documento
         /// </summary>
-        public PrinterImage Image { get; set; }
+        public Imaging.PrinterImage Image { get; set; }
 
         public abstract override byte[] GetContentBuffer(CodePagesEnum codepage);
     }

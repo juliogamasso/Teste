@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 
-namespace ESCPOS.PrinterC
+namespace ESCPOS.Imaging
 {
     public static class Extensions
     {

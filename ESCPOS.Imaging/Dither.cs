@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Drawing;
 using System.Drawing.Imaging;
 
-namespace ESCPOS.PrinterC
+namespace ESCPOS.Imaging
 {
     public interface IDitherable
     {

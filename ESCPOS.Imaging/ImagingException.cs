@@ -1,4 +1,4 @@
-﻿namespace ESCPOS.PrinterC
+﻿namespace ESCPOS.Imaging
 {
     [System.Serializable]
     public class ImagingException : System.Exception

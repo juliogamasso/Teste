@@ -1,4 +1,4 @@
-﻿namespace ESCPOS.PrinterC
+﻿namespace ESCPOS.Imaging
 {
     internal struct Pixel
     {

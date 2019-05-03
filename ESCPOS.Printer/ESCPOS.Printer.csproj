@@ -7,8 +7,8 @@
     <ProjectGuid>{A4DAB9A3-9B63-4BF5-9C19-4881EF7AA776}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>MiniCooper.Printer</RootNamespace>
-    <AssemblyName>MiniCooper.Printer</AssemblyName>
+    <RootNamespace>ESCPOS.Printer</RootNamespace>
+    <AssemblyName>ESCPOS.Printer</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
@@ -89,6 +89,6 @@
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
-  <Import Project="..\MiniCooper.Imaging\MiniCooper.Imaging.projitems" Label="Shared" />
+  <Import Project="..\ESCPOS.Imaging\MiniCooper.Imaging.projitems" Label="Shared" />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

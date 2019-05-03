@@ -2,7 +2,6 @@
 using ESCPOS.Printer.Common.Enums;
 using ESCPOS.Printer.Printers.GenericPrinter;
 using ESCPOS.Printer.Templates;
-using ESCPOS.PrinterC;
 using System;
 using System.Collections.Generic;
 using System.Drawing;
@@ -703,8 +702,8 @@ namespace ESCPOS.SendTestPrint
 
             using (var printer = new GenericPrinter(PortaCom))
             {
-                var image = new PrinterImage((Bitmap)Image.FromFile(@"XING_B24.BMP"));
-                image.ApplyDithering(AlgorithmsEnum.JarvisJudiceNinke, 128);
+                var image = new Imaging.PrinterImage((Bitmap)Image.FromFile(@"XING_B24.BMP"));
+                image.ApplyDithering(Imaging.AlgorithmsEnum.JarvisJudiceNinke, 128);
 
                 for (int i = 3; i >= 1; i--)
                 {

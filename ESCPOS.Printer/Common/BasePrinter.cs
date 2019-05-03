@@ -1,7 +1,6 @@
 ﻿using ESCPOS.Printer.Common.Enums;
 using ESCPOS.Printer.Helpers;
 using ESCPOS.Printer.Interfaces;
-using ESCPOS.PrinterC;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -300,9 +299,9 @@ namespace ESCPOS.Printer.Common
             Reinitialize();
         }
 
-        public abstract void SetImage(PrinterImage image, IDocument doc, int index);
+        public abstract void SetImage(Imaging.PrinterImage image, IDocument doc, int index);
 
-        public abstract void SetImage(PrinterImage image, IDocument doc, int index, FontAlignment justification);
+        public abstract void SetImage(Imaging.PrinterImage image, IDocument doc, int index, FontAlignment justification);
 
         public virtual void PrintNewline()
         {
